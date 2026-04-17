@@ -40,6 +40,12 @@ class IndustryLogger:
     def error(self, msg: str, exc_info=True):
         self.logger.error(msg, exc_info=exc_info)
 
+    def warning(self, msg: str) -> None:
+        self.logger.warning(msg)
+
+    def error(self, msg: str) -> None:
+        self.logger.error(msg)
+
 
 # Global logger instance
 logger = IndustryLogger()
